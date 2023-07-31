@@ -8,7 +8,7 @@ var Item = mongoose.model('Item');
 var Comment = mongoose.model('Comment');
 var User = mongoose.model('User');
 
-// connect to MONGODB
+// connecting to MONGODB
 if(process.env.MONGODB_URI){
     mongoose.connect(process.env.MONGODB_URI)
 } else{
